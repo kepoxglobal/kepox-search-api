@@ -3,10 +3,11 @@
 
 const fetch = require("node-fetch");
 const express = require("express");
+const cors = require("cors");  // ✅ السماح بالوصول من أي موقع
 const app = express();
-
-// Render يوفر متغير PORT تلقائياً
+app.use(cors()); // ✅ تفعيل CORS
 const PORT = process.env.PORT || 3000;
+
 
 app.get("/", (req, res) => {
   res.send("🚀 Kepox Search API is running successfully on Render!");
