@@ -1,15 +1,13 @@
 {
   "name": "kepoxsearchapi",
   "version": "1.0.0",
-  "description": "Kepox Search API powered by Express and node-fetch",
-  "main": "index.js",
+  "license": "ISC",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "^5.1.0",
-    "node-fetch": "^2.7.0",
-    "cors": "^2.8.5"
-  },
-  "license": "ISC"
+    "node-fetch": "^2.7.0"
+  }
 }
